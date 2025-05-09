@@ -1,0 +1,97 @@
+.product-list {
+    padding: 20px;
+    margin-left: 260px; /* Điều chỉnh phù hợp với sidebar */
+    overflow-x: auto;
+    background-color: #f9f9f9; /* Màu nền nhẹ */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Để góc bo tròn */
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .product-table td {
+    background-color: #fafafa;
+  }
+  
+  .product-table td img.product-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .product-table tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  .product-table .price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-table .discount {
+    color: #ff4500; /* Màu đỏ cam cho giá giảm */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+  
+  .product-table .new-price {
+    font-size: 18px;
+    color: #28a745; /* Màu xanh lá cho giá sau giảm */
+  }
+  
+  @media (max-width: 768px) {
+    .product-list {
+      margin-left: 0;
+      padding: 10px;
+    }
+    
+    .product-table th,
+    .product-table td {
+      padding: 10px;
+      font-size: 12px;
+    }
+    
+    .product-table td img.product-image {
+      width: 60px;
+    }
+  }
+  

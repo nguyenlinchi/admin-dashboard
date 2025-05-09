@@ -1,0 +1,197 @@
+/* Container chính */
+.wrapper-center {
+  margin-left: 260px; /* Dời qua phải để tránh sidebar */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Canh giữa nội dung */
+}
+
+.user-list-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header actions */
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background-color: #0069d9;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Table Styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Cảnh báo lỗi */
+.error-message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.no-users {
+  text-align: center;
+  color: #777;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.modal-content button {
+  padding: 12px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.modal-content button:focus {
+  outline: none;
+}
+
+.modal-content .cancel-btn {
+  background-color: #f44336;
+}
+
+.modal-content .cancel-btn:hover {
+  background-color: #e53935;
+}
+
+/* Close button */
+.modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+
+.modal .close-btn:hover {
+  color: #333;
+}
+
+/* Animation for modal */
+.modal.show .modal-content {
+  transform: translateY(0);
+}

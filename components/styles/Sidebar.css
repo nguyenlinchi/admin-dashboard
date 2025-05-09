@@ -1,0 +1,78 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #78c6fa; /* Màu sidebar */
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+}
+
+
+/* Liệt kê các mục trong sidebar */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mỗi mục trong sidebar */
+.sidebar ul li {
+  padding: 15px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease; /* Hiệu ứng mượt mà khi hover */
+  border-radius: 10px; /* Bo góc cho mỗi mục */
+
+}
+
+/* Liên kết trong mỗi mục */
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease; /* Hiệu ứng đổi màu chữ khi hover */
+}
+
+/* Hiệu ứng hover cho mỗi mục */
+.sidebar ul li:hover {
+  background-color: #34495e; /* Đổi màu nền khi hover */
+  cursor: pointer;
+}
+
+/* Hiệu ứng hover cho liên kết */
+.sidebar ul li:hover a {
+  color: #ecf0f1; /* Đổi màu chữ khi hover */
+}
+
+/* Thêm một chút padding cho nội dung khi sidebar xuất hiện */
+.sidebar ul li.active {
+  background-color: #1abc9c; /* Màu khi mục đang được chọn */
+}
+
+/* Thêm một chút hiệu ứng cho các liên kết khi hover */
+.sidebar ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Tạo hiệu ứng khi di chuột vào sidebar */
+.sidebar ul li.active a {
+  font-weight: bold;
+}
+
+/* Đặt các icon hoặc biểu tượng trong menu (nếu có) */
+.sidebar ul li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.logo img {
+  width: 150px; /* Điều chỉnh kích thước logo */
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

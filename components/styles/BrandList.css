@@ -1,0 +1,127 @@
+/* Container chính tránh bị che */
+.wrapper-center {
+  margin-left: 280px; /* Đảm bảo không bị che bởi sidebar */
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* Căn trái bảng */
+}
+
+/* Container bảng */
+.brand-list {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tiêu đề */
+.brand-title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Bảng */
+.brand-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 600px;
+  overflow-x: auto;
+}
+
+/* Header */
+.brand-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Dữ liệu */
+.brand-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover */
+.brand-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Ảnh */
+.brand-table td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Nút */
+.brand-table button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 2px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+.edit-button:hover {
+  background-color: #0069d9;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrapper-center {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .brand-list {
+    padding: 15px;
+  }
+
+  .brand-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    min-width: unset;
+    font-size: 12px;
+  }
+
+  .brand-table th,
+  .brand-table td {
+    padding: 10px;
+  }
+
+  .brand-table td img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-table button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
